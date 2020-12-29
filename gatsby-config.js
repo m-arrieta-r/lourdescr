@@ -1,14 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: "lourdes",
+    title: "Lourdes, Costa Rica",
+    siteUrl: "https://lourdes.cr/"
   },
   plugins: [
-    "gatsby-plugin-sass",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-sass`,
       options: {
-        trackingId: "257353865",
+          implementation: require('sass')
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-3PGXWDH0CT",
+        ],
+      }
     },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",

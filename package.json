@@ -18,7 +18,7 @@
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
-    "gatsby-plugin-google-analytics": "^2.8.0",
+    "gatsby-plugin-google-gtag": "^2.7.0",
     "gatsby-plugin-manifest": "^2.9.1",
     "gatsby-plugin-offline": "^3.7.1",
     "gatsby-plugin-react-helmet": "^3.7.0",
@@ -28,9 +28,17 @@
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-remark": "^2.13.1",
     "gatsby-transformer-sharp": "^2.9.0",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-xhr-backend": "^3.2.2",
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.5",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "sass": "^1.30.0"
   }
 }
