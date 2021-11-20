@@ -5,11 +5,17 @@ import Layout from '../components/Layout';
 const IndexPage = () => (
   <Layout fullMenu>
     <article id="main">
-      <header>
-        <h2>Cozy Silo</h2>
-        <p>A great place to take a breath</p>
-      </header>
-      {/* <section className="wrapper style5">
+      <div className="videoContainer">
+        <video autoPlay loop playsInline muted src="/static/tour-video.mp4"></video>
+        <div className="slogan">
+          <h2>Learn coffee with <br/> my family</h2>
+        </div>
+        <div className="seeMore">
+          <span>See More</span>
+          <a href="/#" className="icon fas fa-angle-up"><span className="label">Twitter</span></a>
+        </div>
+      </div>
+      <section className="wrapper style5">
         <div className="inner">
           <h3>Lorem ipsum dolor</h3>
           <p>
@@ -28,7 +34,7 @@ const IndexPage = () => (
             felis elementum varius.
           </p>
         </div>
-      </section> */}
+      </section>
     </article>
   </Layout>
 );
