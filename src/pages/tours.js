@@ -1,18 +1,21 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import video from '../assets/videos/tour-video.mp4';
 
 const IndexPage = () => (
   <Layout fullMenu>
     <article id="main">
       <div className="videoContainer">
-        <video autoPlay loop playsInline muted src="/static/tour-video.mp4"></video>
+        <video autoPlay loop playsInline muted src={video}></video>
         <div className="slogan">
           <h2>Learn coffee with <br/> my family</h2>
         </div>
         <div className="seeMore">
           <span>See More</span>
-          <a href="/#" className="icon fas fa-angle-up"><span className="label">Twitter</span></a>
+          <a href="/#" className="icon fas fa-angle-up">
+            <span className="label"></span>
+          </a>
         </div>
       </div>
       <section className="wrapper style5">
